@@ -1,0 +1,25 @@
+#!/bin/sh
+
+if [ "$(id -u)" != "0" ]; then
+    echo "You need to be root!"
+    exit 1;
+fi
+
+distro="$1"
+
+case "$distro" in
+    arch|artix)
+        pconf="/etc/pacman-$distro.conf"
+        mirrorlist="/etc/pacman.d/mirrorlist-$distro"
+        ;;
+    *)
+        echo "Usage: switch-distro <arch|artix>"
+        exit 0
+        ;;
+esac
+
+rm /etc/pacman.conf 2> /dev/null
+rm /etc/pacman.d/mirrorlist 2> /dev/null
+
+cp "$pconf" /etc/pacman.conf
+cp "$mirrorlist" /etc/pacman.d/mirrorlist
