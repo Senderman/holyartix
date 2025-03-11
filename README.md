@@ -53,18 +53,25 @@ Modify `airootfs/etc/skel` directory contents
 
 **Q:** Cannot use virt-manager 
 
-**A:** To use virt-manager, start `libvirtd` and `virtlogd` with the following command (as root): `s6-rc start libvirtd && s6-rc start virtlogd`
+**A:** To use virt-manager, start `libvirtd` and `virtlogd` with the following command (as root):
+
+`s6-rc start libvirtd && s6-rc start virtlogd`
 ___
 **Q:** How can I install ArtixLinux using this ISO?
 
-**A:**: Refer to the [Artix Installation Guide](https://wiki.artixlinux.org/Main/Installation).
+**A:** Refer to the [Artix Installation Guide](https://wiki.artixlinux.org/Main/Installation).
+
 After setup, you may need to run the following command (assuming that you've mounted your `/` partition to `/mnt`: 
+
 `rm /mnt/etc/pacman.d/mirrorlist && cp /etc/pacman.d/mirrorlist-artix /mnt/etc/pacman.d/mirrorlist && cp /etc/pacman.d/mirrorlist-arch /mnt/etc/pacman.d && cp /etc/pacman.conf /mnt/etc`
 
 ___
 **Q:** How can I install ArchLinux using this ISO?
 
 **A:** run as root `switch-distro arch`. This will change contents of `/etc` directory to use ArchLinux's repositories and mirrors.
-Then follow the steps of [ArchLinux Installation Guide](https://wiki.archlinux.org/title/Installation_guide), but use `basestrap` instead of `pacstrap`. Everything else should be just the same
+
+Then follow the steps of [ArchLinux Installation Guide](https://wiki.archlinux.org/title/Installation_guide), but use `basestrap` instead of `pacstrap`. Everything else should be just the same.
+
 After setup, you may need to run the following command (assuming that you've mounted your `/` partition to `/mnt`: 
+
 `rm /mnt/etc/pacman.d/mirrorlist && cp /etc/pacman.d/mirrorlist-arch /mnt/etc/pacman.d/mirrorlist && cp /etc/pacman-arch.conf /mnt/etc/pacman.conf`
