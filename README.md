@@ -28,7 +28,7 @@ You need a working Artix/Arch host to build the image.
 Install [Archiso](https://wiki.archlinux.org/title/Archiso) and run as root:
 
 ```bash
-mksarchiso -v .
+mkarchiso -v .
 ```
 
 Look into the `out/` directory for your newly built ISO image.
@@ -51,6 +51,9 @@ Modify `airootfs/etc/skel` directory contents
 
 ## F.A.Q
 
+**Q:**: What is the login user password?
+**A:** `live`. Same as login.
+___
 **Q:** Cannot use virt-manager 
 
 **A:** To use virt-manager, start `libvirtd` and `virtlogd` with the following command (as root):
