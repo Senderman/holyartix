@@ -1,0 +1,16 @@
+dbus-update-activation-environment: error: unable to connect to D-Bus: D-Bus library appears to be incorrectly set up: see the manual page for dbus-uuidgen to correct this issue. (UUID file '/var/lib/dbus/machine-id' should contain a hex string of length 32, not length 13, with no other text; UUID file '/etc/machine-id' should contain a hex string of length 32, not length 13, with no other text)
+D-Bus library appears to be incorrectly set up: see the manual page for dbus-uuidgen to correct this issue. (UUID file '/var/lib/dbus/machine-id' should contain a hex string of length 32, not length 13, with no other text; UUID file '/etc/machine-id' should contain a hex string of length 32, not length 13, with no other text)
+** Message: 01:37:24.242: Failed to fetch _NET_NUMBER_OF_DESKTOPS; assuming 1
+** Message: 01:37:24.242: Failed to get _NET_WORKAREA; using full screen dimensions
+** Message: 01:37:24.242: Failed to fetch _NET_CURRENT_DESKTOP; assuming 0
+** Message: 01:37:24.242: Failed to fetch _NET_CURRENT_DESKTOP; assuming 0
+/usr/bin/iceauth:  creating new authority file /run/user/1000/ICEauthority
+** Message: 01:37:25.398: Failed to fetch _NET_CURRENT_DESKTOP; assuming 0
+
+(xfwm4:1302): xfwm4-WARNING **: 01:37:25.493: Unsupported GL renderer (llvmpipe (LLVM 19.1.7, 256 bits)).
+
+** (xfdesktop:1366): WARNING **: 01:37:29.436: Failed to register the newly set background with AccountsService '(null)': GDBus.Error:org.freedesktop.DBus.Error.InvalidArgs: No such interface “org.freedesktop.DisplayManager.AccountsService”
+
+** (xfdesktop:1366): WARNING **: 01:37:39.900: Failed to register the newly set background with AccountsService '/home/live/Pictures/foxwallpaper.jpg': GDBus.Error:org.freedesktop.DBus.Error.InvalidArgs: No such interface “org.freedesktop.DisplayManager.AccountsService”
+
+(wrapper-2.0:1850): xfce4-power-manager-plugin-WARNING **: 01:37:55.550: Xfce4-power-manager: The panel plugin is present, so the tray icon gets disabled.

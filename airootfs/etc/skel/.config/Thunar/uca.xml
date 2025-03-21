@@ -2,10 +2,12 @@
 <actions>
 <action>
 	<icon>utilities-terminal</icon>
-	<name>Открыть терминал</name>
-	<unique-id>1628712530146006-1</unique-id>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1742518763274575-1</unique-id>
 	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
-	<description>Пример особого действия</description>
+	<description>Example for a custom action</description>
+	<range></range>
 	<patterns>*</patterns>
 	<startup-notify/>
 	<directories/>

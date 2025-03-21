@@ -9,6 +9,41 @@ configs:
     geometry:
       x: 0
       y: 0
+      width: 1280
+      height: 800
+  icons:
+    "/":
+      row: 1
+      col: 0
+    "/home/live":
+      row: 0
+      col: 0
+- level: 0
+  monitors:
+  - id: "86d070b8885feef52bcecd340fe3a058a2b20125"
+    display_name: "LG Display 0x061A (eDP1)"
+    geometry:
+      x: 0
+      y: 0
       width: 1920
       height: 1080
-  icons: {}
+  icons:
+    "4800A87A00A8709C":
+      row: 3
+      col: 0
+      last_seen: 1742518763403510
+    "trash:///":
+      row: 2
+      col: 0
+    "9c4f2fd2-ff67-4f54-8f97-64d1c583b99c":
+      row: 2
+      col: 1
+      last_seen: 1742519263519428
+    "ad75ab4c-075d-40ca-a643-f61c80114879":
+      row: 1
+      col: 1
+      last_seen: 1742519263509780
+    "f5abb073-abfc-4a0d-a26d-6e854149c453":
+      row: 0
+      col: 1
+      last_seen: 1742519263497622
